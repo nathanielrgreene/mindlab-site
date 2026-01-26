@@ -8,9 +8,13 @@ title: ""
 
 # Welcome to the MIND Lab
 
-**What we do**
+--- 
+
+## What we do
 
 We study how people learn and later remember information. We are particularly interested in the *quality* of people's memories: what details are preserved, and what causes others to be forgotten? Answering these questions requires making **inferences** about things we cannot observe directly -- other people's memories. By combining behavioral experiments with mathematical and computational models, we aim to build a clearer picture of the **dynamics** of human memory.
+
+---
 
 [Explore our research](research.qmd){.btn .btn-primary}  
 [See publications](publications.qmd){.btn .btn-outline}
