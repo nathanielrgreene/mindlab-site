@@ -1,1 +1,1 @@
-Sitemap: https://nathanielrgreene.github.io/mindlab-site/sitemap.xml
+Sitemap: https://mindlabpsych.org/sitemap.xml
