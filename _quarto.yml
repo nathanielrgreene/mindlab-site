@@ -2,9 +2,11 @@ project:
   type: website
   resources:
    - pubs
+   - CNAME
 
 website:
   title: "MIND Lab"
+  site-url: https://mindlabpsych.org
   navbar:
     left:
       - text: Home
