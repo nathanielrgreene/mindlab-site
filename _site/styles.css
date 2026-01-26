@@ -7,15 +7,34 @@
 }
 
 
-/* Replace PDF links in the references list with a clickable icon */
-.references a[href$=".pdf"] {
-  font-size: 0;              /* hide the URL text */
+/* Publications: turn PDF URLs into a clean red PDF badge */
+.references a[href$=".pdf"]{
+  /* hide the actual URL text */
+  font-size: 0;
+  color: transparent;
   text-decoration: none;
+
+  /* make the badge container */
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #b00020;
+  line-height: 1;
+  white-space: nowrap;
 }
 
-.references a[href$=".pdf"]::after {
-  content: "📄";
-  font-size: 1rem;           /* bring the icon back */
-  margin-left: 0.35rem;
-  vertical-align: middle;
+/* visible label */
+.references a[href$=".pdf"]::before{
+  content: "PDF";
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+/* hover */
+.references a[href$=".pdf"]:hover{
+  background: #8a0018;
 }

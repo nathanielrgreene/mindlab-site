@@ -7,27 +7,34 @@
 }
 
 
-/* Style PDF links as red badges */
-a[href$=".pdf"] {
+/* Publications: turn PDF URLs into a clean red PDF badge */
+.references a[href$=".pdf"]{
+  /* hide the actual URL text */
+  font-size: 0;
+  color: transparent;
+  text-decoration: none;
+
+  /* make the badge container */
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  padding: 2px 6px;
-  margin-left: 6px;
+  margin-left: 0.5rem;
+  padding: 2px 8px;
   border-radius: 4px;
-  background-color: #b00020;
-  color: white !important;
-  font-size: 0.75em;
-  font-weight: 600;
-  text-decoration: none;
+  background: #b00020;
+  line-height: 1;
+  white-space: nowrap;
 }
 
-/* Add PDF label */
-a[href$=".pdf"]::before {
+/* visible label */
+.references a[href$=".pdf"]::before{
   content: "PDF";
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff;
 }
 
-/* Hover effect */
-a[href$=".pdf"]:hover {
-  background-color: #8a0018;
+/* hover */
+.references a[href$=".pdf"]:hover{
+  background: #8a0018;
 }
