@@ -22,3 +22,5 @@ format:
     css: styles.css
     toc: false
 
+bibliography: publications.bib
+csl: csl/apa.csl

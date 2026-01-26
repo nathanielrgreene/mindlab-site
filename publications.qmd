@@ -1,0 +1,15 @@
+---
+title: "Publications"
+bibliography: publications.bib
+csl: csl/apa.csl
+nocite: |
+  @*
+citeproc: true
+reference-section-title: ""
+---
+
+
+## Journal Articles
+
+::: {#refs .references data-sort="year-desc"}
+:::
