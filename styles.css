@@ -39,3 +39,40 @@
   height: 100%;
   background: url("images/pdf-icon.svg") no-repeat center / contain;
 }
+
+
+/* Smooth scrolling when clicking year nav */
+html { scroll-behavior: smooth; }
+
+/* Year navigation */
+.pub-year-nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem 0;
+  justify-content: center;
+}
+
+.pub-year-nav a{
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid #d7dbe0;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.pub-year-nav a:hover{
+  background: #f3f5f7;
+}
+
+/* Year headings */
+.pub-year-heading{
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
