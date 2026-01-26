@@ -25,6 +25,8 @@ format:
     theme: cosmo
     css: styles.css
     toc: false
+    include-after-body:
+      - js/pubs-by-year.html
 
 bibliography: publications.bib
 csl: csl/apa.csl

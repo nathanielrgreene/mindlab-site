@@ -1,17 +1,35 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Run-once guard (prevents duplicate nav)
+  if (document.querySelector(".pub-year-nav")) return;
+
   const refs = document.querySelector(".references");
   if (!refs) return;
 
   const entries = Array.from(refs.querySelectorAll(".csl-entry"));
   if (!entries.length) return;
 
+  // ---- helpers (put them here) ----
+  function extractYear(text) {
+    // matches (2024) or (2024a) or (2024b) etc.
+    const m = text.match(/\((\d{4})([a-z])?\)/i);
+    return m ? parseInt(m[1], 10) : null;
+  }
+
+  function stripYearSuffixes(node) {
+    // visually convert (2023a) -> (2023)
+    node.innerHTML = node.innerHTML.replace(/\((\d{4})[a-z]\)/gi, "($1)");
+  }
+  // ---------------------------------
+
   const bucketLabel = (year) => (year >= 2021 ? String(year) : "2020 and earlier");
 
   // Group entries by year label
   const groups = new Map();
   for (const entry of entries) {
-    const m = entry.textContent.match(/\((\d{4})\)/);
-    const year = m ? parseInt(m[1], 10) : 0;
+    // Optional: remove the a/b/c in the displayed citation
+    stripYearSuffixes(entry);
+
+    const year = extractYear(entry.textContent) ?? 0;
     const label = bucketLabel(year);
 
     if (!groups.has(label)) groups.set(label, []);
@@ -75,4 +93,3 @@ document.addEventListener("DOMContentLoaded", () => {
   refs.innerHTML = "";
   refs.appendChild(grouped);
 });
-
