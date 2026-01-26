@@ -7,34 +7,35 @@
 }
 
 
-/* Publications: turn PDF URLs into a clean red PDF badge */
-.references a[href$=".pdf"]{
-  /* hide the actual URL text */
-  font-size: 0;
-  color: transparent;
+.references {
+  text-align: left;
+}
+
+
+/* --- Put PDF icons at the far right of each reference entry --- */
+
+/* Quarto/Pandoc CSL bibliography entries usually use .csl-entry */
+.references .csl-entry {
+  position: relative;
+  padding-right: 2.2rem;   /* make room for the icon */
+}
+
+/* Hide the URL text and turn the link into an icon button */
+.references .csl-entry a[href$=".pdf"]{
+  position: absolute;
+  right: 0;
+  top: 0.10em;             /* adjust if you want it slightly lower/higher */
+  width: 2rem;
+  height: 2rem;
+  font-size: 0;            /* hide the URL text */
   text-decoration: none;
-
-  /* make the badge container */
-  display: inline-flex;
-  align-items: center;
-  margin-left: 0.5rem;
-  padding: 2px 8px;
-  border-radius: 4px;
-  background: #b00020;
-  line-height: 1;
-  white-space: nowrap;
 }
 
-/* visible label */
-.references a[href$=".pdf"]::before{
-  content: "PDF";
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: #fff;
-}
-
-/* hover */
-.references a[href$=".pdf"]:hover{
-  background: #8a0018;
+/* Draw your PDF svg */
+.references .csl-entry a[href$=".pdf"]::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("images/pdf-icon.svg") no-repeat center / contain;
 }
