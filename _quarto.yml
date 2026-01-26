@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+   - pubs
 
 website:
   title: "MIND Lab"
