@@ -1,5 +1,5 @@
 ---
-title: "mindlab-site"
+title: "Welcome to the Memory INFerences & Dynamics (MIND) Lab"
 ---
 
 This is a Quarto website.
