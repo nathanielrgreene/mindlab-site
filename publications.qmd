@@ -6,6 +6,11 @@ nocite: |
   @*
 citeproc: true
 reference-section-title: ""
+format:
+  html:
+    include-after-body:
+      - js/pubs-by-year.js
+
 ---
 
 
