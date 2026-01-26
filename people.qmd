@@ -1,0 +1,24 @@
+---
+title: "People"
+---
+
+## Principal Investigator
+
+![](images/people/Greene.png){width=200px .headshot}
+
+
+**Dr. Nathaniel R. Greene**  
+Assistant Professor, Department of Psychological and Brain Sciences,
+Villanova University  
+
+My research focuses on how people remember past experience, with a particular emphasis on the precision or quality of what people remember or, conversely, what they forget. This research seeks to identify mechanisms underlying why our episodic memories are often fuzzy, especially as we age into older adulthood. To address these questions, I combine behavioral experimentation with computational modeling to study memory across different timescales and levels of representation.
+
+---
+
+## Graduate Students
+
+- Coming soon
+
+## Undergraduate Researchers
+
+- Coming soon
