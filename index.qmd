@@ -1,7 +1,70 @@
 ---
 title: "Welcome to the Memory INFerences & Dynamics (MIND) Lab"
+page-layout: full
 ---
 
-This is a Quarto website.
+::: {.hero}
+::: {.hero-inner}
+::: {.hero-left}
+# Memory INFerences & Dynamics (MIND) Lab
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+We study how people build, use, and sometimes mis-use memory—especially when remembering requires **inference**, **attention**, and **time**.
+
+[Explore our research](research.html){.btn .btn-primary}
+[See publications](publications.html){.btn .btn-outline}
+:::
+
+::: {.hero-right}
+![](images/mindlab-logo.png){.hero-logo alt="MIND Lab logo"}
+:::
+:::
+:::
+
+---
+
+## What we’re trying to understand
+
+::: {.questions}
+- **When does memory preserve detail—and when does it collapse into gist?**
+- **How does attention shape what gets stored vs. what gets filled in later?**
+- **Why do confident memories sometimes contain the wrong specifics?**
+- **How do retrieval dynamics change what we ultimately report as “remembered”?**
+:::
+
+---
+
+## Our work combines
+
+::: {.cards}
+::: {.card}
+### Behavioral experiments
+Carefully controlled tasks measuring accuracy, confidence, and response dynamics.
+:::
+
+::: {.card}
+### Computational modeling
+Formal models that make explicit predictions about *how* memory evolves and is retrieved.
+:::
+
+::: {.card}
+### Lifespan & individual differences
+How memory precision, inference, and strategy vary across people and age.
+:::
+:::
+
+---
+
+## New to the lab?
+
+If you’re a prospective student, collaborator, or participant, start here:
+
+- [People](people.html)
+- [Research](research.html)
+- [Publications](publications.html)
+- [Contact](contact.html)
+
+---
+
+::: {.footer-note}
+Built with Quarto.  
+:::
