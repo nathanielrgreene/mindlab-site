@@ -1,70 +1,33 @@
 ---
-title: "Welcome to the Memory INFerences & Dynamics (MIND) Lab"
-page-layout: full
+title: ""
 ---
 
-::: {.hero}
-::: {.hero-inner}
-::: {.hero-left}
-# Memory INFerences & Dynamics (MIND) Lab
+::: {.home-hero}
 
-We study how people build, use, and sometimes mis-use memory—especially when remembering requires **inference**, **attention**, and **time**.
+![](images/mindlab-logo.png){width=760}
 
-[Explore our research](research.html){.btn .btn-primary}
-[See publications](publications.html){.btn .btn-outline}
-:::
+# Welcome to the MIND Lab
 
-::: {.hero-right}
-![](images/mindlab-logo.png){.hero-logo alt="MIND Lab logo"}
-:::
-:::
+**What we do**
+
+We study how people learn and later remember information. We are particularly interested in the *quality* of people's memories: what details are preserved, and what causes others to be forgotten? Answering these questions requires making **inferences** about things we cannot observe directly -- other people's memories. By combining behavioral experiments with mathematical and computational models, we aim to build a clearer picture of the **dynamics** of human memory.
+
+[Explore our research](research.qmd){.btn .btn-primary}  
+[See publications](publications.qmd){.btn .btn-outline}
+
 :::
 
 ---
 
 ## What we’re trying to understand
 
-::: {.questions}
-- **When does memory preserve detail—and when does it collapse into gist?**
-- **How does attention shape what gets stored vs. what gets filled in later?**
-- **Why do confident memories sometimes contain the wrong specifics?**
-- **How do retrieval dynamics change what we ultimately report as “remembered”?**
-:::
+- When does memory preserve detail — and when does it collapse into gist?  
+- How does attention shape what gets stored vs. what gets filled in later?  
+- Why do confident memories sometimes contain the wrong specifics?  
+- How do memory representations change across time and across the lifespan?
 
 ---
 
-## Our work combines
-
-::: {.cards}
-::: {.card}
-### Behavioral experiments
-Carefully controlled tasks measuring accuracy, confidence, and response dynamics.
-:::
-
-::: {.card}
-### Computational modeling
-Formal models that make explicit predictions about *how* memory evolves and is retrieved.
-:::
-
-::: {.card}
-### Lifespan & individual differences
-How memory precision, inference, and strategy vary across people and age.
-:::
-:::
-
----
-
-## New to the lab?
-
-If you’re a prospective student, collaborator, or participant, start here:
-
-- [People](people.html)
-- [Research](research.html)
-- [Publications](publications.html)
-- [Contact](contact.html)
-
----
-
-::: {.footer-note}
-Built with Quarto.  
+::: {.home-footer}
+Built with [Quarto](https://quarto.org/)
 :::
