@@ -32,7 +32,28 @@
     "href": "index.html",
     "title": "Welcome to the Memory INFerences & Dynamics (MIND) Lab",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "We study how people build, use, and sometimes mis-use memory—especially when remembering requires inference, attention, and time.\nExplore our research See publications"
+  },
+  {
+    "objectID": "index.html#what-were-trying-to-understand",
+    "href": "index.html#what-were-trying-to-understand",
+    "title": "Welcome to the Memory INFerences & Dynamics (MIND) Lab",
+    "section": "What we’re trying to understand",
+    "text": "What we’re trying to understand\n\n\nWhen does memory preserve detail—and when does it collapse into gist?\nHow does attention shape what gets stored vs. what gets filled in later?\nWhy do confident memories sometimes contain the wrong specifics?\nHow do retrieval dynamics change what we ultimately report as “remembered”?"
+  },
+  {
+    "objectID": "index.html#our-work-combines",
+    "href": "index.html#our-work-combines",
+    "title": "Welcome to the Memory INFerences & Dynamics (MIND) Lab",
+    "section": "Our work combines",
+    "text": "Our work combines\n\n\nBehavioral experiments\nCarefully controlled tasks measuring accuracy, confidence, and response dynamics.\n\n\nComputational modeling\nFormal models that make explicit predictions about how memory evolves and is retrieved.\n\n\nLifespan & individual differences\nHow memory precision, inference, and strategy vary across people and age."
+  },
+  {
+    "objectID": "index.html#new-to-the-lab",
+    "href": "index.html#new-to-the-lab",
+    "title": "Welcome to the Memory INFerences & Dynamics (MIND) Lab",
+    "section": "New to the lab?",
+    "text": "New to the lab?\nIf you’re a prospective student, collaborator, or participant, start here:\n\nPeople\nResearch\nPublications\nContact\n\n\n\nBuilt with Quarto."
   },
   {
     "objectID": "publications.html",
