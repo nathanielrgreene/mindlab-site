@@ -34,3 +34,16 @@ Guitard, D., Reid, J. N., Greene, N. R., Saint-Aubin, J., &amp; Jamieson, R. K. 
 
 ::: {#refs .references data-sort="year-desc"}
 :::
+
+## Book Chapters
+
+<div class="chapters">
+
+<div class="csl-entry">
+Greene, N. R.,  &amp; Naveh-Benjamin, M. On the adaptative reliance on fuzzy memory representations in adult aging. In M. Toglia, H. Otgarr, J. Altarriba, and B. Erickson (Eds.), <em>Interdisciplinary Perspectives and Advances in Understanding Adaptative Memory</em> (pp. 276--297). Oxford University Press.
+<a href="https://mindlabpsych.org/pubs/GreeneNaveh_fuzzy_chapter.pdf">PDF</a>
+</div>
+
+
+
+</div>

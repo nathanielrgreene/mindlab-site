@@ -100,6 +100,8 @@ html { scroll-behavior: smooth; }
 
 /* Make manual preprints visually match CSL references */
 .preprints .csl-entry {
+  padding-left: 2.5em;
+  text-indent: -2.5em;
   margin-bottom: 0.75rem;   /* similar spacing to the refs */
 }
 
@@ -116,12 +118,15 @@ html { scroll-behavior: smooth; }
   vertical-align: middle;
 }
 
-/* PDF icon for both references and preprints */
+/* PDF icon for both chapters and preprints */
+
+.chapters a[href$=".pdf"],
 .preprints a[href$=".pdf"] {
   font-size: 0;              /* hide the PDF text */
   text-decoration: none;
 }
 
+.chapters a[href$=".pdf"]::after,
 .preprints a[href$=".pdf"]::after {
   content: "";
   display: inline-block;
@@ -134,3 +139,10 @@ html { scroll-behavior: smooth; }
   background-repeat: no-repeat;
 }
 
+
+/* Make manual chapters visually match CSL references */
+.chapters .csl-entry {
+  padding-left: 2.5em;
+  text-indent: -2.5em;
+  margin-bottom: 0.75rem;   /* similar spacing to the refs */
+}
