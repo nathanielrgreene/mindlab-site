@@ -76,3 +76,36 @@ html { scroll-behavior: smooth; }
   font-size: 1.6rem;
   font-weight: 800;
 }
+
+
+/*Preprint formating*/
+.preprints {
+  margin-bottom: 3rem;
+}
+
+.preprints p {
+  margin: 0.4rem 0;
+}
+
+.preprints a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.preprints hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 1rem 0;
+}
+
+.preprints a[href$=".pdf"]::after {
+  content: "";
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: 0.4rem;
+  background-image: url("images/pdf-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
