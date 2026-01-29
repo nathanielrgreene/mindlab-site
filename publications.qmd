@@ -15,7 +15,20 @@ format:
 
 ## Preprints
 
-Greene, N. R., Guitard, D., & Naveh-Benjamin, M. *Process Explanations of Age-Related Changes in Memory Specificity.* [PDF](https://mindlabpsych.org/pubs/GreeneEtal_preprint_process.pdf)
+<div class="preprints">
+
+<div class="csl-entry">
+Greene, N. R., Guitard, D., &amp; Naveh-Benjamin, M. <em>Process Explanations of Age-Related Changes in Memory Specificity.</em>
+<a href="https://mindlabpsych.org/pubs/GreeneEtal_preprint_process.pdf">PDF</a>
+</div>
+
+<div class="csl-entry">
+Guitard, D., Reid, J. N., Greene, N. R., Saint-Aubin, J., &amp; Jamieson, R. K. <em>An Embedded Computational Framework of Age-Related Memory Change.</em>
+<a href="https://mindlabpsych.org/pubs/GuitardEtal_preprint_comp.pdf">PDF</a>
+</div>
+
+</div>
+
 
 ## Journal Articles
 
