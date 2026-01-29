@@ -98,6 +98,12 @@ html { scroll-behavior: smooth; }
   margin: 1rem 0;
 }
 
+/* Make manual preprints visually match CSL references */
+.preprints .csl-entry {
+  margin-bottom: 0.75rem;   /* similar spacing to the refs */
+}
+
+
 .preprints a[href$=".pdf"]::after {
   content: "";
   display: inline-block;
@@ -109,3 +115,22 @@ html { scroll-behavior: smooth; }
   background-repeat: no-repeat;
   vertical-align: middle;
 }
+
+/* PDF icon for both references and preprints */
+.preprints a[href$=".pdf"] {
+  font-size: 0;              /* hide the PDF text */
+  text-decoration: none;
+}
+
+.preprints a[href$=".pdf"]::after {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+  background-image: url("images/pdf-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
