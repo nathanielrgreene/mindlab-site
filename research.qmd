@@ -5,7 +5,8 @@ title: "Research in the MIND Lab"
 **Page coming soon. Stay tuned!**
 
 ::: {.text-center}
-![](images/cmr_retrieved_context_demo.gif){width=85%}
-
-*Retrieved-context model overview: encoding (top) → retrieval (bottom).*
+<video controls loop muted playsinline style="max-width:85%; height:auto;">
+  <source src="images/cmr_retrieved_context_demo.mp4" type="video/mp4">
+</video>
 :::
+
