@@ -146,3 +146,11 @@ html { scroll-behavior: smooth; }
   text-indent: -2.5em;
   margin-bottom: 0.75rem;   /* similar spacing to the refs */
 }
+
+
+/*highlight target when jumping to it */
+:target {
+  background: rgba(0,123,255,0.08);
+  border-radius: 6px;
+  padding: 4px;
+}
