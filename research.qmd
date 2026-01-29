@@ -31,6 +31,7 @@ title: "Research in the MIND Lab"
     position:relative;
     display:inline-block;
     max-width: 85%;
+    overflow: hidden;
   }
   .cmr-figure{
     width:100%;
@@ -48,19 +49,14 @@ title: "Research in the MIND Lab"
     box-shadow: 0 0 0 4px rgba(0,123,255,0.15);
     transition: opacity 200ms ease;
   }
-  /* dimming layer: everything starts dim */
-  .cmr-figure-wrap.dim::after{
-    content:"";
-    position:absolute; inset:0;
-    background: rgba(0,0,0,.18);
-    pointer-events:none;
-  }
+ 
 
   /* when we “light” a panel, we punch through the dim using a bright rect + per-rect backdrop */
   .cmr-spot{
     position:absolute;
     background: rgba(255,255,255,0.0);
-    box-shadow: 0 0 0 9999px rgba(0,0,0,0.35);
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.75),
+                0 0 18px rgba(0,123,255,0.6);
     border-radius: 10px;
     pointer-events:none;
   }
@@ -104,13 +100,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // Coordinates are % of the image (left, top, width, height).
   // You’ll tweak these once; after that it’s perfect forever.
   const steps = [
-    {label:"1/7 Encoding: (Cat)",  rect:{l:  6, t: 10, w: 27, h: 38}},
-    {label:"2/7 Encoding: (Tree)", rect:{l: 36, t: 10, w: 27, h: 38}},
-    {label:"3/7 Encoding: (Ball)", rect:{l: 66, t: 10, w: 27, h: 38}},
-    {label:"4/7 Retrieval: (1) Cue items",        rect:{l:  6, t: 55, w: 20, h: 40}},
-    {label:"5/7 Retrieval: (3) Recall competition",rect:{l: 28, t: 55, w: 22, h: 40}},
-    {label:"6/7 Retrieval: (4–5) Retrieve context", rect:{l: 52, t: 55, w: 22, h: 40}},
-    {label:"7/7 Retrieval: (6) Context updates",    rect:{l: 76, t: 55, w: 18, h: 40}},
+    {label:"Encoding: Cat",  rect:{l:  6, t: 5, w: 28, h: 38}},
+    {label:"Encoding: Tree", rect:{l: 35.5, t: 4.8, w: 27, h: 38}},
+    {label:"Encoding: Ball", rect:{l: 66, t: 4.8, w: 29, h: 38}},
+    {label:"Retrieval: Cue items",        rect:{l:  4.5, t: 43, w: 28, h: 57}},
+    {label:"Retrieval: Recall competition",rect:{l: 26, t: 43, w: 29.5, h: 50}},
+    {label:"Retrieval: Retrieve context", rect:{l: 52, t: 52, w: 22, h: 40}},
+    {label:"Retrieval: Context updates",    rect:{l: 65, t: 43, w: 31, h: 50}},
   ];
 
   let i = 0;
