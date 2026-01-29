@@ -4,9 +4,158 @@ title: "Research in the MIND Lab"
 
 **Page coming soon. Stay tuned!**
 
+
 ::: {.text-center}
-<video controls loop muted playsinline style="max-width:85%; height:auto;">
-  <source src="images/cmr_retrieved_context_demo.mp4" type="video/mp4">
-</video>
+<div class="cmr-stepper" id="cmrStepper">
+  <div class="cmr-figure-wrap">
+    <img src="images/CMR.png" alt="Retrieved-context model diagram" class="cmr-figure">
+
+    <!-- overlay rectangles get injected by JS -->
+    <div class="cmr-overlay"></div>
+
+    <div class="cmr-badge" id="cmrBadge">1/7 Encoding: (Cat)</div>
+  </div>
+
+  <div class="cmr-controls">
+    <button type="button" class="cmr-btn" id="cmrPrev">Prev</button>
+    <button type="button" class="cmr-btn" id="cmrPlay">Play</button>
+    <button type="button" class="cmr-btn" id="cmrNext">Next</button>
+  </div>
+</div>
 :::
+
+<style>
+  .cmr-figure-wrap{
+    position:relative;
+    display:inline-block;
+    max-width: 85%;
+  }
+  .cmr-figure{
+    width:100%;
+    height:auto;
+    display:block;
+  }
+  .cmr-overlay{
+    position:absolute; inset:0;
+    pointer-events:none;
+  }
+  .cmr-rect{
+    position:absolute;
+    border: 3px solid rgba(0, 123, 255, 0.95);
+    border-radius: 6px;
+    box-shadow: 0 0 0 4px rgba(0,123,255,0.15);
+    transition: opacity 200ms ease;
+  }
+  /* dimming layer: everything starts dim */
+  .cmr-figure-wrap::after{
+    content:"";
+    position:absolute; inset:0;
+    background: rgba(0,0,0,0.35);
+    pointer-events:none;
+    transition: opacity 200ms ease;
+  }
+
+  /* when we “light” a panel, we punch through the dim using a bright rect + per-rect backdrop */
+  .cmr-spot{
+    position:absolute;
+    background: rgba(255,255,255,0.0);
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.35);
+    border-radius: 10px;
+    pointer-events:none;
+  }
+
+  .cmr-badge{
+    position:absolute;
+    top: 10px; left: 10px;
+    background: rgba(255,255,255,0.9);
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  .cmr-controls{
+    margin-top: 12px;
+    display:flex;
+    gap:10px;
+    justify-content:center;
+  }
+  .cmr-btn{
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor:pointer;
+  }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const root = document.getElementById("cmrStepper");
+  if (!root) return;
+
+  const overlay = root.querySelector(".cmr-overlay");
+  const badge = document.getElementById("cmrBadge");
+  const prevBtn = document.getElementById("cmrPrev");
+  const nextBtn = document.getElementById("cmrNext");
+  const playBtn = document.getElementById("cmrPlay");
+
+  // Coordinates are % of the image (left, top, width, height).
+  // You’ll tweak these once; after that it’s perfect forever.
+  const steps = [
+    {label:"1/7 Encoding: (Cat)",  rect:{l:  6, t: 10, w: 27, h: 38}},
+    {label:"2/7 Encoding: (Tree)", rect:{l: 36, t: 10, w: 27, h: 38}},
+    {label:"3/7 Encoding: (Ball)", rect:{l: 66, t: 10, w: 27, h: 38}},
+    {label:"4/7 Retrieval: (1) Cue items",        rect:{l:  6, t: 55, w: 20, h: 40}},
+    {label:"5/7 Retrieval: (3) Recall competition",rect:{l: 28, t: 55, w: 22, h: 40}},
+    {label:"6/7 Retrieval: (4–5) Retrieve context", rect:{l: 52, t: 55, w: 22, h: 40}},
+    {label:"7/7 Retrieval: (6) Context updates",    rect:{l: 76, t: 55, w: 18, h: 40}},
+  ];
+
+  let i = 0;
+  let timer = null;
+  const STEP_MS = 1400; // <- slow it down here
+
+  function pctRectToStyle(r){
+    return `left:${r.l}%; top:${r.t}%; width:${r.w}%; height:${r.h}%;`;
+  }
+
+  function render(){
+    overlay.innerHTML = "";
+    const r = steps[i].rect;
+
+    // spotlight punch-through dim
+    const spot = document.createElement("div");
+    spot.className = "cmr-spot";
+    spot.style.cssText = pctRectToStyle({l:r.l-1, t:r.t-1, w:r.w+2, h:r.h+2});
+    overlay.appendChild(spot);
+
+    // blue outline
+    const box = document.createElement("div");
+    box.className = "cmr-rect";
+    box.style.cssText = pctRectToStyle(r);
+    overlay.appendChild(box);
+
+    badge.textContent = steps[i].label;
+  }
+
+  function next(){ i = (i+1) % steps.length; render(); }
+  function prev(){ i = (i-1+steps.length) % steps.length; render(); }
+
+  function play(){
+    if (timer){
+      clearInterval(timer);
+      timer = null;
+      playBtn.textContent = "Play";
+      return;
+    }
+    playBtn.textContent = "Pause";
+    timer = setInterval(next, STEP_MS);
+  }
+
+  prevBtn.addEventListener("click", prev);
+  nextBtn.addEventListener("click", next);
+  playBtn.addEventListener("click", play);
+
+  render();
+});
+</script>
 

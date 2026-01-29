@@ -3,7 +3,7 @@ project:
   resources:
    - pubs
    - CNAME
-   - images/cmr_retrieved_context_demo.mp4
+   - images
 
 website:
   title: "MIND Lab"
