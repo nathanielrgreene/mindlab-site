@@ -5,7 +5,9 @@ title: "Research in the MIND Lab"
 **Page coming soon. Stay tuned!**
 
 
-::: {.text-center}
+**Retrieved Context Modeling**
+```{=html}
+
 <div class="cmr-stepper" id="cmrStepper">
   <div class="cmr-figure-wrap">
     <img src="images/CMR.png" alt="Retrieved-context model diagram" class="cmr-figure">
@@ -22,7 +24,7 @@ title: "Research in the MIND Lab"
     <button type="button" class="cmr-btn" id="cmrNext">Next</button>
   </div>
 </div>
-:::
+
 
 <style>
   .cmr-figure-wrap{
@@ -47,12 +49,11 @@ title: "Research in the MIND Lab"
     transition: opacity 200ms ease;
   }
   /* dimming layer: everything starts dim */
-  .cmr-figure-wrap::after{
+  .cmr-figure-wrap.dim::after{
     content:"";
     position:absolute; inset:0;
-    background: rgba(0,0,0,0.35);
+    background: rgba(0,0,0,.18);
     pointer-events:none;
-    transition: opacity 200ms ease;
   }
 
   /* when we “light” a panel, we punch through the dim using a bright rect + per-rect backdrop */
@@ -94,6 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const overlay = root.querySelector(".cmr-overlay");
   const badge = document.getElementById("cmrBadge");
+  const figureWrap = root.querySelector(".cmr-figure-wrap");
+  figureWrap.classList.add("dim");
   const prevBtn = document.getElementById("cmrPrev");
   const nextBtn = document.getElementById("cmrNext");
   const playBtn = document.getElementById("cmrPlay");
@@ -158,4 +161,4 @@ document.addEventListener("DOMContentLoaded", () => {
   render();
 });
 </script>
-
+```

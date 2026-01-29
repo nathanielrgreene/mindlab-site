@@ -145,23 +145,26 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><strong>Page coming soon. Stay tuned!</strong></p>
-<div class="text-center">
-<div id="cmrStepper" class="cmr-stepper">
-<div class="cmr-figure-wrap">
-<pre><code>&lt;img src="images/CMR.png" alt="Retrieved-context model diagram" class="cmr-figure"&gt;
+<p><strong>Retrieved Context Modeling</strong></p>
 
-&lt;!-- overlay rectangles get injected by JS --&gt;
-&lt;div class="cmr-overlay"&gt;&lt;/div&gt;
+<div class="cmr-stepper" id="cmrStepper">
+  <div class="cmr-figure-wrap">
+    <img src="images/CMR.png" alt="Retrieved-context model diagram" class="cmr-figure">
 
-&lt;div class="cmr-badge" id="cmrBadge"&gt;1/7 Encoding: (Cat)&lt;/div&gt;</code></pre>
+    <!-- overlay rectangles get injected by JS -->
+    <div class="cmr-overlay"></div>
+
+    <div class="cmr-badge" id="cmrBadge">1/7 Encoding: (Cat)</div>
+  </div>
+
+  <div class="cmr-controls">
+    <button type="button" class="cmr-btn" id="cmrPrev">Prev</button>
+    <button type="button" class="cmr-btn" id="cmrPlay">Play</button>
+    <button type="button" class="cmr-btn" id="cmrNext">Next</button>
+  </div>
 </div>
-<div class="cmr-controls">
-<pre><code>&lt;button type="button" class="cmr-btn" id="cmrPrev"&gt;Prev&lt;/button&gt;
-&lt;button type="button" class="cmr-btn" id="cmrPlay"&gt;Play&lt;/button&gt;
-&lt;button type="button" class="cmr-btn" id="cmrNext"&gt;Next&lt;/button&gt;</code></pre>
-</div>
-</div>
-</div>
+
+
 <style>
   .cmr-figure-wrap{
     position:relative;
@@ -185,12 +188,11 @@ ul.task-list li input[type="checkbox"] {
     transition: opacity 200ms ease;
   }
   /* dimming layer: everything starts dim */
-  .cmr-figure-wrap::after{
+  .cmr-figure-wrap.dim::after{
     content:"";
     position:absolute; inset:0;
-    background: rgba(0,0,0,0.35);
+    background: rgba(0,0,0,.18);
     pointer-events:none;
-    transition: opacity 200ms ease;
   }
 
   /* when we “light” a panel, we punch through the dim using a bright rect + per-rect backdrop */
@@ -224,6 +226,7 @@ ul.task-list li input[type="checkbox"] {
     cursor:pointer;
   }
 </style>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("cmrStepper");
@@ -231,6 +234,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const overlay = root.querySelector(".cmr-overlay");
   const badge = document.getElementById("cmrBadge");
+  const figureWrap = root.querySelector(".cmr-figure-wrap");
+  figureWrap.classList.add("dim");
   const prevBtn = document.getElementById("cmrPrev");
   const nextBtn = document.getElementById("cmrNext");
   const playBtn = document.getElementById("cmrPlay");
