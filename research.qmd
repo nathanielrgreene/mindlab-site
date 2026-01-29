@@ -5,7 +5,10 @@ title: "Research in the MIND Lab"
 **Page coming soon. Stay tuned!**
 
 
-**Retrieved Context Modeling**
+## Computational Modeling
+
+**Retrieved Context Models**
+
 ```{=html}
 
 <div class="cmr-stepper" id="cmrStepper">
