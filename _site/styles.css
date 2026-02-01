@@ -175,3 +175,34 @@ html { scroll-behavior: smooth; }
   border-radius: 6px;
   padding: 4px;
 }
+
+
+/*for global match model*/
+
+.model-figure-float{
+  float: right;
+  max-width: 42%;
+  margin: 0 0 16px 20px;
+}
+
+.model-figure-img{
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.model-figure-caption{
+  font-size: 0.85rem;
+  line-height: 1.3;
+  opacity: 0.8;
+  margin-top: 6px;
+}
+
+/* Mobile: stop floating, stack cleanly */
+@media (max-width: 800px){
+  .model-figure-float{
+    float: none;
+    max-width: 100%;
+    margin: 16px auto;
+  }
+}

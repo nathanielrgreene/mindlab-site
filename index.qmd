@@ -26,9 +26,9 @@ We study how people learn and later remember information. We are particularly in
 ## What we’re trying to understand
 
 - When does memory preserve detail — and when does it collapse into gist?  
-- How does attention shape what gets stored vs. what gets filled in later?  
-- Why do confident memories sometimes contain the wrong specifics?  
+- How does attention shape what gets into or out of memory?  
 - How do memory representations change across time and across the lifespan?
+- Why are we sometimes overly confident in what we think we remember?
 
 ---
 
