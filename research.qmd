@@ -11,7 +11,19 @@ Research in the MIND Lab seeks to explain the dynamics of human memory -- how it
 
 ### When and why memories lose specific details
 
-Our memories are rarely perfect portrayals of our past experiences. Do you remember exactly what was said in a conversation you had yesterday, or what color shirt your friend was wearing? Chances are, those specific details are gone, even though you still remember *what* the conversation was about. This is a feature, not a bug, of human memory: preserving the core essence or gist of our experiences helps us make sense of the world. But there are also situations in which access to specific details matters—such as when taking an exam or remembering whether you took your medication today. What determines whether those details are available?
+```{=html}
+<div class="model-figure-float">
+  <img src="images/memory_distortion.png"
+       alt="Illustration of global matching in recognition memory"
+       class="model-figure-img">
+  <div class="model-figure-caption">
+  </div>
+</div>
+```
+
+Our memories are rarely perfect portrayals of our past experiences. Do you remember exactly what was said in a conversation you had yesterday, or what color shirt your friend was wearing? Chances are, those specific details are gone, even though you still remember *what* the conversation was about. 
+
+This is a feature, not a bug, of human memory: preserving the core essence or gist of our experiences helps us make sense of the world. But there are also situations in which access to specific details matters—such as when taking an exam or remembering whether you took your medication today. What determines whether those details are available?
 
 We study the conditions under which episodic memory preserves fine-grained details versus collapsing to gist-level information. Across paradigms, we ask what *representational content* is available at retrieval, and what mechanisms constrain access to specific details when they matter. In this work, we consider the roles of factors such as attention, working memory demands, processing speed, and retrieval dynamics in shaping whether memory supports detailed versus more generalized representations.
 
