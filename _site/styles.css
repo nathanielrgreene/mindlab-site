@@ -6,6 +6,27 @@
   border: 2px solid #ddd;
 }
 
+/*Headshots for lab members as rows*/
+.person-row{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.person-photo{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;        /* crops instead of stretching */
+  border-radius: 50%;       /* circle */
+  flex-shrink: 0;
+}
+
+.person-info{
+  max-width: 600px;
+}
+
+
 
 .references {
   text-align: left;

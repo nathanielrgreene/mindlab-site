@@ -21,4 +21,22 @@ My research focuses on how people remember past experience, with a particular em
 
 ## Undergraduate Researchers
 
+```{=html}
+<div class="person-row">
+
+  <img src="images/Moore.jpg"
+       alt="Elin Moore"
+       class="person-photo">
+
+  <div class="person-info">
+    <strong>Elin Moore</strong><br>
+    Undergraduate Researcher<br>
+    Short description of interests, project, etc.
+  </div>
+
+</div>
+```
+
 - Coming soon
+
+
