@@ -40,7 +40,7 @@ My research focuses on how people remember past experience, with a particular em
 ```{=html}
 <div class="person-row">
 
-  <img src="images/people/Wolos.jpg"
+  <img src="images/people/Wolos.jpeg"
        alt="Mia Wolos"
        class="person-photo">
 
