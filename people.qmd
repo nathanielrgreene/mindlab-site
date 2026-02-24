@@ -17,7 +17,21 @@ My research focuses on how people remember past experience, with a particular em
 
 ## Graduate Students
 
-- Coming soon
+```{=html}
+<div class="person-row">
+
+  <img src="images/people/Bereza.png"
+       alt="Olivia Bereza"
+       class="person-photo">
+
+  <div class="person-info">
+    <strong>Olivia Bereza</strong><br>
+    M.S. Student<br>
+    My research interests and pursuits within the lab center on face perception and memory. I am particularly interested in investigating the nuances that underlie our tendency to perceive faces where none exist (face-pareidolia), and what this phenomenon reveals about the mechanisms of face processing and memory. Of special interest would be to extend such research to clinical populations, such as individuals with prosopagnosia, the inability to recognize faces. More broadly, I am interested in the neural and biological underpinnings of cognition, perception, and behavior.
+  </div>
+
+</div>
+```
 
 ## Undergraduate Researchers
 
