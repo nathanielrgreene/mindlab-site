@@ -52,3 +52,19 @@ My research focuses on how people remember past experience, with a particular em
 
 </div>
 ```
+
+```{=html}
+<div class="person-row">
+
+  <img src="images/people/Ganley.png"
+       alt="Colleen Ganley"
+       class="person-photo">
+
+  <div class="person-info">
+    <strong>Colleen Ganley</strong><br>
+    Undergraduate Research Assistant<br>
+    I am a pre-med biology major minoring in psychology. I am interested in studying neurodegenerative disorders that specifically impact memory.
+  </div>
+
+</div>
+```
