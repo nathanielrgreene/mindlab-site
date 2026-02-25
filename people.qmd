@@ -82,3 +82,20 @@ My research focuses on how people remember past experience, with a particular em
 
 </div>
 ```
+
+```{=html}
+<div class="person-row">
+
+  <img src="images/people/Stanley.jpg"
+       alt="Alex Stanley"
+       class="person-photo">
+
+  <div class="person-info">
+    <strong>Alex Stanley</strong><br>
+    Undergraduate Research Assistant<br>
+    I am a Psychology major with a minor in Spanish Studies, and I plan on attending medical school in the future. I am interested in memory because it is central to understanding mental health disorders and neurodegenerative diseases.
+  </div>
+
+</div>
+```
+
